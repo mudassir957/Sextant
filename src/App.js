@@ -9,11 +9,11 @@ class App extends Component {
     return (
       <div className="App">
         <Banner bannerText="Sextant" />
-        <Exhibit name="Child Component">
-          <p> It is 1st child component</p>
+        <Exhibit name="Public IPv4 Address">
+          <AddressDisplay url="https://api.ipify.org?format=json" />
         </Exhibit>
-        <Exhibit name="Child Component">
-          <p> It is 2nd child component</p>
+        <Exhibit name="Public IPv6 Address">
+          <AddressDisplay url="https://api64.ipify.org?format=json" />
         </Exhibit>
       </div>
     );
